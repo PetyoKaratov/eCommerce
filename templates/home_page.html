@@ -1,0 +1,33 @@
+<!doctype html>
+{% extends "base.html" %}
+{% load static %}
+   <title>Home Page Template</title>
+{% block base_head %}
+
+{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1>{{ title }}</h1>
+    <h1>Hello, world we're working!</h1>
+</div>
+
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'img/api.png' %}" class="img-fluid"/>
+            <p>
+            <h3>{{ content }}</h3></p>
+        </div>
+    </div>
+
+    {% if request.user.is_authenticated %}
+    <div class="row">
+        <div class="col">
+            <h1>Premium</h1>
+            <p>
+            <h3>{{ premium_content }}</h3></p>
+        </div>
+    </div>
+    {% endif %}
+
+{% endblock %}
+
