@@ -15,7 +15,10 @@ pipeline {
 
 	stage('Deploy'){
 	    steps {
-	        sh 'python manage.py runserver'
+	        sh '''
+	            workon ecommerce
+	            python manage.py runserver
+	            '''
 	    }
 	}
 
