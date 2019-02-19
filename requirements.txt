@@ -1,6 +1,10 @@
 certifi==2018.11.29
 chardet==3.0.4
+<<<<<<< HEAD
 Django==2.0.10
+=======
+Django==2.0.11
+>>>>>>> 19b6ae2eb34583e19c28970352aed4f72ffd06d9
 idna==2.8
 Pillow==5.3.0
 pytz==2018.5
